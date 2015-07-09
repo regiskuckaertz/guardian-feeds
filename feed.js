@@ -215,6 +215,11 @@
   }
 
   function onReady() {
+    // Feature detection
+    if( ! 'flex' in document.documentElement ) {
+      addClass(document.documentElement, 'no-flexbox');
+    }
+
     var tabber = Tabber('tablist');
     tabber.init();
 
