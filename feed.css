@@ -162,7 +162,7 @@ body {
 
 .no-flexbox .feed > header {
   display: table;
-  width: 100%;
+  width: calc(100% - 4em);
   vertical-align: baseline;
 }
 

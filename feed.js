@@ -216,7 +216,7 @@
 
   function onReady() {
     // Feature detection
-    if( ! 'flex' in document.documentElement ) {
+    if( ! ('flex' in document.documentElement.style) ) {
       addClass(document.documentElement, 'no-flexbox');
     }
 
